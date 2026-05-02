@@ -1,350 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Shed Photobooth | Custom-Built Photobooth Hire Scotland & UK</title>
-  <meta name="description" content="We build and provide custom photobooths for festivals, weddings, Christmas markets, sports events and brand activations. Based in Scotland, available UK-wide.">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shed Photobooth | Custom Photobooth Hire Scotland & UK</title>
+  <meta name="description" content="Custom photobooth hire for festivals, weddings, parties and brand activations across Scotland and the UK. Built, branded, delivered and supported by Shed Photobooth.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <div class="noise"></div>
-  <div class="amber-glow"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="siteHeader">
-    <a href="index.html" class="brand" aria-label="Shed Photobooth home">
-      <img src="images/logo-white.png" alt="Shed Photobooth">
-    </a>
+  <main class="control-room" id="main">
+    <aside class="brand-rail" aria-label="Shed Photobooth navigation">
+      <a class="brand-lockup" href="#main" aria-label="Shed Photobooth home">
+        <span>SHED</span>
+        <em>PHOTOBOOTH</em>
+      </a>
+      <nav>
+        <a href="#modes">Modes</a>
+        <a href="#build">Build</a>
+        <a href="#proof">Proof</a>
+        <a href="#quote-form">Book</a>
+      </nav>
+      <p>Scotland &middot; UK-wide</p>
+    </aside>
 
-    <nav class="nav-links">
-      <a href="#booths">Booths</a>
-      <a href="#work">Work</a>
-      <a href="#showcase">Showcase</a>
-      <a href="#included">Included</a>
-      <a href="#events">Events</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <a href="#contact" class="header-cta">Get a Quote</a>
-
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
-
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#booths">Booths</a>
-    <a href="#work">Work</a>
-    <a href="#showcase">Showcase</a>
-    <a href="#included">Included</a>
-    <a href="#events">Events</a>
-    <a href="#contact" class="mobile-cta">Get a Quote</a>
-  </div>
-
-  <main>
-    <section class="hero">
-      <div class="hero-bg">
-        <img src="images/gallery-1.jpg" alt="">
+    <section class="machine" aria-labelledby="machine-title">
+      <div class="machine-copy">
+        <p class="label">Live booth configurator</p>
+        <h1 id="machine-title">Choose the event. Run the booth. Print the proof.</h1>
+        <p>This is Shed Photobooth: custom booth builds, branded guest screens, print layouts and live support for festivals, brands, weddings, markets and parties.</p>
       </div>
 
-      <div class="hero-overlay"></div>
+      <section class="booth-unit" data-booth aria-label="Interactive photobooth demo">
+        <div class="unit-top">
+          <span>SESSION</span>
+          <strong data-status>READY</strong>
+        </div>
 
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Custom photobooth hire · Scotland & UK-wide</p>
-
-          <h1>
-            We build<br>
-            photobooths<br>
-            that steal<br>
-            the room.
-          </h1>
-
-          <p class="hero-sub">
-            Custom-built shed photobooths for festivals, weddings, Christmas markets, stadium events and brand activations.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Check Availability</a>
-            <a href="#booths" class="btn btn-outline">What We Provide</a>
+        <div class="hardware-row">
+          <div class="camera-rig" aria-hidden="true">
+            <div class="led-ring"></div>
+            <div class="camera-body">
+              <span></span>
+              <div class="camera-lens"></div>
+            </div>
+          </div>
+          <div class="status-ticket">
+            <span data-countdown>3</span>
+            <strong data-readout>Ready for guests</strong>
           </div>
         </div>
 
-        <div class="hero-product reveal delay-1">
-          <div class="product-frame">
-            <img src="images/gallery-2.jpg" alt="Shed Photobooth at an event">
+        <div class="booth-screen">
+          <div class="screen-message">
+            <strong data-screen-title>Step inside</strong>
+            <p data-screen-copy>Pick a mode, tap start, capture frames and print the branded strip.</p>
           </div>
-
-          <div class="product-badge">
-            <span>Built. Branded. Delivered.</span>
-            <p>Booth build · branded screen · custom print layout · instant prints · setup · support</p>
+          <div class="capture-grid" data-frames aria-hidden="true">
+            <i><b>01</b></i>
+            <i><b>02</b></i>
+            <i><b>03</b></i>
+            <i><b>04</b></i>
           </div>
-        </div>
-      </div>
-
-      <div class="hero-bottom">
-        <div>
-          <strong>Not a generic pod.</strong>
-          <span>Built around your event.</span>
-        </div>
-        <div>
-          <strong>Real prints.</strong>
-          <span>Guests leave with something worth keeping.</span>
-        </div>
-        <div>
-          <strong>Handled end-to-end.</strong>
-          <span>Design, delivery, setup and operation.</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="marquee">
-      <div class="marquee-track">
-        <span>Festivals</span><span>Weddings</span><span>Christmas Markets</span><span>Sports Events</span><span>Brand Activations</span><span>Corporate Events</span>
-        <span>Festivals</span><span>Weddings</span><span>Christmas Markets</span><span>Sports Events</span><span>Brand Activations</span><span>Corporate Events</span>
-      </div>
-    </section>
-
-    <section class="section booth-section" id="booths">
-      <div class="container">
-        <div class="section-kicker reveal">What we provide</div>
-
-        <div class="split-title">
-          <h2 class="reveal">Custom photobooths, built properly.</h2>
-          <p class="large-copy reveal delay-1">
-            We design, build and provide physical photobooth installations that look like part of the event — not an afterthought pushed into a corner.
-          </p>
+          <button class="start-button" type="button" data-start-booth>Run booth demo</button>
         </div>
 
-        <div class="booth-cards">
-          <article class="booth-card reveal">
-            <span>01</span>
-            <h3>The Booth</h3>
-            <p>A custom shed-style photobooth built for the look, scale and energy of your event.</p>
-          </article>
-
-          <article class="booth-card reveal delay-1">
-            <span>02</span>
-            <h3>The Guest Experience</h3>
-            <p>Simple, fun and fast. Guests step in, smile, print, share and walk away with a proper keepsake.</p>
-          </article>
-
-          <article class="booth-card reveal delay-2">
-            <span>03</span>
-            <h3>The Branding</h3>
-            <p>Welcome screen, overlays and print designs created to match your event identity.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-<section class="section showcase-section" id="showcase">
-  <div class="container">
-    <div class="section-heading reveal">
-      <span>Real work</span>
-      <h2>Booths, screens and prints we’ve built so far.</h2>
-      <p>
-        A look at the custom photobooths, welcome screens and print layouts created for real events, venues and activations.
-      </p>
-    </div>
-
-    <div class="showcase-grid">
-
-      <article class="showcase-project reveal">
-        <div class="showcase-main">
-          <img src="images/christmas-booth.jpg" alt="Christmas photobooth build">
-        </div>
-        <div class="showcase-content">
-          <span>Christmas</span>
-          <h3>Festive market photobooth</h3>
-          <p>Seasonal booth styling, branded welcome screen and custom print layout for Christmas event guests.</p>
-        </div>
-        <div class="showcase-mini">
-          <img src="images/christmas-screen.jpg" alt="Christmas welcome screen">
-          <img src="images/christmas-print.jpg" alt="Christmas print layout">
-        </div>
-      </article>
-
-      <article class="showcase-project reveal delay-1">
-        <div class="showcase-main">
-          <img src="images/fringe-booth.jpg" alt="Festival Fringe photobooth build">
-        </div>
-        <div class="showcase-content">
-          <span>Festival Fringe</span>
-          <h3>High-footfall festival build</h3>
-          <p>A festival-ready booth designed for busy Fringe audiences, fast guest flow and strong visual impact.</p>
-        </div>
-        <div class="showcase-mini">
-          <img src="images/fringe-screen.jpg" alt="Fringe welcome screen">
-          <img src="images/fringe-print.jpg" alt="Fringe print layout">
-        </div>
-      </article>
-
-      <article class="showcase-project reveal delay-2">
-        <div class="showcase-main">
-          <img src="images/horsebox-booth.jpg" alt="Horsebox photobooth build">
-        </div>
-        <div class="showcase-content">
-          <span>Horsebox</span>
-          <h3>Converted horsebox booth</h3>
-          <p>A character-led booth concept with a physical build that feels different from a standard event pod.</p>
-        </div>
-        <div class="showcase-mini">
-          <img src="images/horsebox-screen.jpg" alt="Horsebox welcome screen">
-          <img src="images/horsebox-print.jpg" alt="Horsebox print layout">
-        </div>
-      </article>
-
-      <article class="showcase-project reveal">
-        <div class="showcase-main">
-          <img src="images/murrayfield-booth.jpg" alt="Murrayfield photobooth build">
-        </div>
-        <div class="showcase-content">
-          <span>Murrayfield</span>
-          <h3>Sports event activation</h3>
-          <p>Bold event screen design and branded photo output built for stadium audiences and fan engagement.</p>
-        </div>
-        <div class="showcase-mini">
-          <img src="images/murrayfield-screen.jpg" alt="Murrayfield welcome screen">
-          <img src="images/murrayfield-print.jpg" alt="Murrayfield print layout">
-        </div>
-      </article>
-
-      <article class="showcase-project reveal delay-1">
-        <div class="showcase-main">
-          <img src="images/neighbourgood-booth.jpg" alt="Neighbourgood Market photobooth build">
-        </div>
-        <div class="showcase-content">
-          <span>Neighbourgood Market</span>
-          <h3>Market lifestyle booth</h3>
-          <p>Warm, social and lifestyle-led booth design made to sit naturally within a food, drink and market environment.</p>
-        </div>
-        <div class="showcase-mini">
-          <img src="images/neighbourgood-screen.jpg" alt="Neighbourgood Market welcome screen">
-          <img src="images/neighbourgood-print.jpg" alt="Neighbourgood Market print layout">
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-    <section class="image-break reveal">
-      <img src="images/gallery-3.jpg" alt="Branded Shed Photobooth print design">
-      <div class="image-break-copy">
-        <span>Designed in-house</span>
-        <h2>Every screen and print layout is made for your event.</h2>
-      </div>
-    </section>
-
-    <section class="section work-section" id="work">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span>The look</span>
-          <h2>Dark. Warm. Physical. Built to be seen.</h2>
-        </div>
-
-        <div class="work-grid">
-          <div class="work-item large reveal">
-            <img src="images/gallery-1.jpg" alt="Shed Photobooth exterior">
-            <div><strong>Festival-ready builds</strong><span>High-footfall, high-energy sites.</span></div>
-          </div>
-
-          <div class="work-item reveal delay-1">
-            <img src="images/gallery-4.jpeg" alt="Festival event setup">
-            <div><strong>Immersive setting</strong><span>Fits the atmosphere around it.</span></div>
-          </div>
-
-          <div class="work-item reveal delay-2">
-            <img src="images/gallery-5.jpg" alt="Christmas market photobooth setup">
-            <div><strong>Seasonal moments</strong><span>Markets, winter events and festive builds.</span></div>
+        <div class="printer-slot" aria-hidden="true">
+          <div class="receipt" data-print>
+            <span>FRAME 01</span>
+            <span>FRAME 02</span>
+            <span>FRAME 03</span>
+            <small>SHED PHOTOBOOTH</small>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="mode-dock" id="modes" aria-label="Event modes">
+        <button class="mode-card is-active" type="button" data-mode="festival">
+          <span>Festival</span>
+          <strong>Queues, crowds, weather, atmosphere.</strong>
+        </button>
+        <button class="mode-card" type="button" data-mode="brand">
+          <span>Brand</span>
+          <strong>Campaign shell, sponsor screen, branded print.</strong>
+        </button>
+        <button class="mode-card" type="button" data-mode="wedding">
+          <span>Wedding</span>
+          <strong>Premium guest magnet, not a prop table.</strong>
+        </button>
+        <button class="mode-card" type="button" data-mode="party">
+          <span>Party</span>
+          <strong>Fast repeats, loud reactions, physical keepsakes.</strong>
+        </button>
+      </section>
     </section>
 
-    <section class="section included-section" id="included">
-      <div class="container">
-        <div class="included-grid">
-          <div class="included-title reveal">
-            <span class="section-kicker">Included</span>
-            <h2>No mystery. No messy handover. We handle the booth.</h2>
-            <p>Tell us the date, location, audience and style. We’ll shape the build around the event and keep the experience smooth on the day.</p>
-          </div>
+    <section class="output-panel" aria-label="Build and enquiry panel">
+      <div class="panel-card instant-quote">
+        <p class="label">Now building</p>
+        <h2>Custom event photobooth hire.</h2>
+        <ul>
+          <li>Physical booth build</li>
+          <li>Branded welcome screen</li>
+          <li>Custom print design</li>
+          <li>Setup and support</li>
+        </ul>
+        <a class="button primary" href="#quote-form">Check date</a>
+      </div>
 
-          <div class="included-list reveal delay-1">
-            <div><span>01</span><strong>Custom shed photobooth</strong></div>
-            <div><span>02</span><strong>Branded welcome screen</strong></div>
-            <div><span>03</span><strong>Bespoke photo print design</strong></div>
-            <div><span>04</span><strong>Instant prints</strong></div>
-            <div><span>05</span><strong>Digital gallery</strong></div>
-            <div><span>06</span><strong>Delivery, setup and support</strong></div>
-          </div>
+      <div class="panel-card image-map" id="build">
+        <p class="label">Image slots</p>
+        <div class="slot-grid">
+          <div class="slot">booth-build.jpg</div>
+          <div class="slot">welcome-screen.jpg</div>
+          <div class="slot">print-layout.jpg</div>
+          <div class="slot">event-support.jpg</div>
         </div>
       </div>
-    </section>
 
-    <section class="section events-section" id="events">
-      <div class="container">
-        <div class="section-heading center reveal">
-          <span>Where it works</span>
-          <h2>Made for events where people actually move.</h2>
-        </div>
-
-        <div class="event-tiles">
-          <div class="event-tile reveal">Festivals</div>
-          <div class="event-tile reveal delay-1">Weddings</div>
-          <div class="event-tile reveal delay-2">Christmas Markets</div>
-          <div class="event-tile reveal">Fringe Venues</div>
-          <div class="event-tile reveal delay-1">Sports Events</div>
-          <div class="event-tile reveal delay-2">Brand Activations</div>
-          <div class="event-tile reveal">Corporate Events</div>
-          <div class="event-tile reveal delay-1">Private Parties</div>
+      <div class="panel-card proof-card" id="proof">
+        <p class="label">Case study slots</p>
+        <div class="proof-strip">
+          <span>fringe-booth.jpg</span>
+          <span>christmas-booth.jpg</span>
+          <span>brand-booth.jpg</span>
         </div>
       </div>
-    </section>
 
-    <section class="quote-section">
-      <div class="container reveal">
-        <p>“We build more than booths. We build experiences.”</p>
-        <span>Craft · Character · Reliability · Joy</span>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="container contact-grid">
-        <div class="reveal">
-          <span class="section-kicker">Start here</span>
-          <h2>Bring the shed to your event.</h2>
-          <p>
-            Send your date, location and event type. We’ll come back with availability, build options and a tailored quote.
-          </p>
-        </div>
-
-        <div class="contact-card reveal delay-1">
-          <a href="mailto:hello@shedphotobooth.com" class="big-email">hello@shedphotobooth.com</a>
-          <p>Based in Scotland · Available UK-wide</p>
-          <a href="mailto:hello@shedphotobooth.com?subject=Shed Photobooth Enquiry" class="btn btn-primary full">Email Us</a>
-        </div>
-      </div>
+      <form class="quote-form panel-card" id="quote-form">
+        <p class="label">Book the booth</p>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Event type</span>
+          <select name="eventType" required>
+            <option value="">Choose one</option>
+            <option>Festival or public event</option>
+            <option>Corporate or brand activation</option>
+            <option>Wedding or private party</option>
+            <option>Market, venue or seasonal install</option>
+          </select>
+        </label>
+        <label>
+          <span>Brief</span>
+          <textarea name="brief" rows="4" placeholder="Date, venue, guest numbers, timings and branding ideas." required></textarea>
+        </label>
+        <button class="button primary" type="submit">Prepare enquiry email</button>
+      </form>
     </section>
   </main>
-
-  <footer class="footer">
-    <div>
-      <strong>Shed Photobooth</strong>
-      <span>Custom-built photobooth hire for festivals, weddings and events.</span>
-    </div>
-    <div>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </div>
-  </footer>
 
   <script src="js/main.js"></script>
 </body>
