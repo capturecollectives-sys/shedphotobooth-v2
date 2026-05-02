@@ -13,126 +13,140 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <main class="control-room" id="main">
-    <aside class="brand-rail" aria-label="Shed Photobooth navigation">
-      <a class="brand-lockup" href="#main" aria-label="Shed Photobooth home">
-        <span>SHED</span>
-        <em>PHOTOBOOTH</em>
-      </a>
-      <nav>
-        <a href="#modes">Modes</a>
-        <a href="#build">Build</a>
-        <a href="#proof">Proof</a>
-        <a href="#quote-form">Book</a>
-      </nav>
-      <p>Scotland &middot; UK-wide</p>
-    </aside>
+  <header class="site-header" data-header>
+    <a class="brand-lockup" href="#main" aria-label="Shed Photobooth home">
+      <span>SHED</span>
+      <em>PHOTOBOOTH</em>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#build">Build</a>
+      <a href="#proof">Proof</a>
+      <a href="#events">Events</a>
+      <a href="#quote-form">Enquire</a>
+    </nav>
+    <a class="nav-cta" href="#quote-form">Check date</a>
+  </header>
 
-    <section class="machine" aria-labelledby="machine-title">
-      <div class="machine-copy">
-        <p class="label">Live booth configurator</p>
-        <h1 id="machine-title">Choose the event. Run the booth. Print the proof.</h1>
-        <p>This is Shed Photobooth: custom booth builds, branded guest screens, print layouts and live support for festivals, brands, weddings, markets and parties.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Custom photobooth hire &middot; Scotland and UK-wide</p>
+        <h1>Built booths. Branded screens. Proper prints.</h1>
+        <p class="hero-lede">Shed Photobooth designs, builds and runs event photobooths that feel part of the venue, the campaign and the crowd.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#quote-form">Book your date</a>
+          <a class="button ghost" href="#proof">View proof slots</a>
+        </div>
       </div>
 
-      <section class="booth-unit" data-booth aria-label="Interactive photobooth demo">
-        <div class="unit-top">
-          <span>SESSION</span>
-          <strong data-status>READY</strong>
-        </div>
-
-        <div class="hardware-row">
-          <div class="camera-rig" aria-hidden="true">
+      <div class="booth-stage" aria-label="Interactive Shed Photobooth demo">
+        <div class="stage-glow"></div>
+        <section class="booth" data-booth>
+          <div class="booth-roof"></div>
+          <div class="booth-sign">Shed Photobooth</div>
+          <div class="camera-module" aria-hidden="true">
             <div class="led-ring"></div>
             <div class="camera-body">
               <span></span>
-              <div class="camera-lens"></div>
+              <i></i>
             </div>
           </div>
-          <div class="status-ticket">
-            <span data-countdown>3</span>
-            <strong data-readout>Ready for guests</strong>
+          <div class="guest-screen">
+            <strong data-screen-title>Welcome screen</strong>
+            <p data-screen-copy>Tap to start a branded guest flow.</p>
+            <div class="frame-row" data-frames>
+              <span>01</span>
+              <span>02</span>
+              <span>03</span>
+            </div>
           </div>
-        </div>
-
-        <div class="booth-screen">
-          <div class="screen-message">
-            <strong data-screen-title>Step inside</strong>
-            <p data-screen-copy>Pick a mode, tap start, capture frames and print the branded strip.</p>
+          <button class="booth-button" type="button" data-start-booth>Run booth demo</button>
+          <div class="print-slot">
+            <div class="print-strip" data-print>
+              <b>Frame 01</b>
+              <b>Frame 02</b>
+              <b>Frame 03</b>
+              <small>Custom print layout</small>
+            </div>
           </div>
-          <div class="capture-grid" data-frames aria-hidden="true">
-            <i><b>01</b></i>
-            <i><b>02</b></i>
-            <i><b>03</b></i>
-            <i><b>04</b></i>
-          </div>
-          <button class="start-button" type="button" data-start-booth>Run booth demo</button>
-        </div>
-
-        <div class="printer-slot" aria-hidden="true">
-          <div class="receipt" data-print>
-            <span>FRAME 01</span>
-            <span>FRAME 02</span>
-            <span>FRAME 03</span>
-            <small>SHED PHOTOBOOTH</small>
-          </div>
-        </div>
-      </section>
-
-      <section class="mode-dock" id="modes" aria-label="Event modes">
-        <button class="mode-card is-active" type="button" data-mode="festival">
-          <span>Festival</span>
-          <strong>Queues, crowds, weather, atmosphere.</strong>
-        </button>
-        <button class="mode-card" type="button" data-mode="brand">
-          <span>Brand</span>
-          <strong>Campaign shell, sponsor screen, branded print.</strong>
-        </button>
-        <button class="mode-card" type="button" data-mode="wedding">
-          <span>Wedding</span>
-          <strong>Premium guest magnet, not a prop table.</strong>
-        </button>
-        <button class="mode-card" type="button" data-mode="party">
-          <span>Party</span>
-          <strong>Fast repeats, loud reactions, physical keepsakes.</strong>
-        </button>
-      </section>
+        </section>
+      </div>
     </section>
 
-    <section class="output-panel" aria-label="Build and enquiry panel">
-      <div class="panel-card instant-quote">
-        <p class="label">Now building</p>
-        <h2>Custom event photobooth hire.</h2>
-        <ul>
-          <li>Physical booth build</li>
-          <li>Branded welcome screen</li>
-          <li>Custom print design</li>
-          <li>Setup and support</li>
-        </ul>
-        <a class="button primary" href="#quote-form">Check date</a>
-      </div>
+    <section class="proof-bar" aria-label="Core services">
+      <span>Physical booth builds</span>
+      <span>Branded welcome screens</span>
+      <span>Custom print layouts</span>
+      <span>Setup and live support</span>
+    </section>
 
-      <div class="panel-card image-map" id="build">
-        <p class="label">Image slots</p>
-        <div class="slot-grid">
-          <div class="slot">booth-build.jpg</div>
-          <div class="slot">welcome-screen.jpg</div>
-          <div class="slot">print-layout.jpg</div>
-          <div class="slot">event-support.jpg</div>
-        </div>
+    <section class="section build-section" id="build">
+      <div class="section-heading">
+        <p class="eyebrow">What you get</p>
+        <h2>A photobooth built around the event, not dropped into it.</h2>
       </div>
-
-      <div class="panel-card proof-card" id="proof">
-        <p class="label">Case study slots</p>
-        <div class="proof-strip">
-          <span>fringe-booth.jpg</span>
-          <span>christmas-booth.jpg</span>
-          <span>brand-booth.jpg</span>
-        </div>
+      <div class="build-grid">
+        <article>
+          <span>01</span>
+          <h3>Booth build</h3>
+          <p>A physical booth presence that looks intentional in the room, field, market, venue or activation space.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Screen design</h3>
+          <p>Guest-facing welcome screens and flows matched to the event, sponsor, wedding or brand campaign.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Print layout</h3>
+          <p>Custom photo strips and branded keepsakes, designed so the output is worth carrying home.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Run on the day</h3>
+          <p>Delivery, setup and event support handled by people who understand busy live environments.</p>
+        </article>
       </div>
+    </section>
 
-      <form class="quote-form panel-card" id="quote-form">
-        <p class="label">Book the booth</p>
+    <section class="section proof-section" id="proof">
+      <div class="section-heading">
+        <p class="eyebrow">Image placeholders</p>
+        <h2>Drop the right work into the right slot.</h2>
+        <p>These are clean holding spaces for the real assets: booth build, branded screen and print layout. No random scattered images.</p>
+      </div>
+      <div class="slot-wall">
+        <div class="image-slot large">booth-build.jpg</div>
+        <div class="image-slot">welcome-screen.jpg</div>
+        <div class="image-slot">print-layout.jpg</div>
+        <div class="image-slot">festival-booth.jpg</div>
+        <div class="image-slot">christmas-booth.jpg</div>
+        <div class="image-slot">brand-activation.jpg</div>
+      </div>
+    </section>
+
+    <section class="section events-section" id="events">
+      <div class="section-heading">
+        <p class="eyebrow">Where it works</p>
+        <h2>Made for high-energy events and polished private moments.</h2>
+      </div>
+      <div class="event-grid">
+        <span>Festivals</span>
+        <span>Brand activations</span>
+        <span>Weddings</span>
+        <span>Markets</span>
+        <span>Corporate events</span>
+        <span>Parties</span>
+      </div>
+    </section>
+
+    <section class="section enquiry-section" id="quote-form">
+      <div class="enquiry-copy">
+        <p class="eyebrow">Start here</p>
+        <h2>Tell us the date, venue and type of booth you need.</h2>
+        <p>We will come back with availability, build options and the most sensible route for the event.</p>
+      </div>
+      <form class="quote-form">
         <label>
           <span>Name</span>
           <input type="text" name="name" autocomplete="name" required>
@@ -153,7 +167,7 @@
         </label>
         <label>
           <span>Brief</span>
-          <textarea name="brief" rows="4" placeholder="Date, venue, guest numbers, timings and branding ideas." required></textarea>
+          <textarea name="brief" rows="5" placeholder="Date, venue, guest numbers, timings and branding ideas." required></textarea>
         </label>
         <button class="button primary" type="submit">Prepare enquiry email</button>
       </form>
